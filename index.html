@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <title>School Data</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+
+</head>
+
+<body style="background-image: linear-gradient(120deg, rgb(38, 117, 61),rgb(117, 52, 38));">
+    <div class="container">
+        <div class="card p-5 text-white bg-dark" style="margin-left: 30%; margin-right: 30%; margin-top: 20%; margin-bottom: 20%;">
+
+
+            <div class="text-center p-4">
+                <h1>School Data <br>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="InputFirstName">First Name </label>
+                        <input type="text" class="form-control" id="InputFirstName" placeholder="First Name" required></div>
+                    <div class="form-group col-md-6">
+                        <label for="InputLastName">Last Name </label>
+                        <input type="text" class="form-control" id="InputLastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="InputAddress">Address</label>
+                        <input type="text" class="form-control" id="InputAddress" placeholder="Address" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="InputClass">Class</label>
+                        <select id="InputClass" class="form-control" placeholder="Class" required>
+                        <option>NUR</option>
+                        <option>LKG</option>
+                        <option>UKG</option>
+                        <option>1st</option>
+                        <option>2nd</option>
+                        <option>3rd</option>
+                        <option>4th</option>
+                        <option>5th</option>
+                        <option>6th</option>
+                        <option>7th</option>
+                        <option>8th</option>
+                        <option>9th</option>
+                        <option>10th</option>
+                        <option>11th</option>
+                        <option>12h</option>
+
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="InputSection">Section</label>
+                        <input type="text" class="form-control" id="InputSection" placeholder="Section" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="InputRollno">Roll No. </label>
+                        <input type="text" class="form-control" id="InputRollno" placeholder="Roll no" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-check col-sm-12" onclick="Validation()">Submit</button>
+                </div>
+            </form>
+
+            <div>
+                <p id="showResult">
+
+                </p>
+            </div>
+
+
+            <script src="script.js"></script>
+        </div>
+
+        <div>
+            We like to have you with us.
+        </div>
+
+</body>
+
+</html>
